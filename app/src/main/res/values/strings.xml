@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SoftServe</string>
+    <string name="capital">Capital</string>
+    <string name="region">Region</string>
+    <string name="country">Country</string>
+    <string name="choose_a_card">Choose a card :)</string>
+</resources>
