@@ -4,4 +4,12 @@
     <string name="region">Region</string>
     <string name="country">Country</string>
     <string name="choose_a_card">Choose a card :)</string>
+    <string name="population">Population</string>
+    <string name="tbd">TBD</string>
+    <string name="currencies">Currencies</string>
+    <string name="time_zone">Time Zone</string>
+    <string name="calling_codes">Calling Codes</string>
+    <string name="languages">Languages</string>
+    <string name="error_occured">Error occurred while parsing data</string>
+    <string name="no_data_to_display">No data to display</string>
 </resources>

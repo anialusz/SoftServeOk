@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/county_fragment.xml" value="0.264945652173913" />
+        <entry key="..\:/nauka/SoftServe/app/src/main/res/drawable/ic_filled.xml" value="0.1" />
+        <entry key="..\:/nauka/SoftServe/app/src/main/res/drawable/ic_outline.xml" value="0.1" />
+        <entry key="..\:/nauka/SoftServe/app/src/main/res/drawable/ic_sharp_brightness_low_24.xml" value="0.11" />
+        <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/county_fragment.xml" value="0.1" />
         <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/county_list_fragment.xml" value="0.1" />
+        <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/item_country_details_row.xml" value="0.1" />
         <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/item_country_list.xml" value="0.1" />
         <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/main_activity.xml" value="0.12916246215943492" />
         <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/main_fragment.xml" value="0.18062563067608475" />
+        <entry key="..\:/nauka/SoftServe/app/src/main/res/layout/view_country_details_item.xml" value="0.13193743693239152" />
       </map>
     </option>
   </component>

@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:backgroundTint="@color/purple_200"
         android:elevation="4dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,31 +20,35 @@
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-            <ImageView
-                android:id="@+id/ivFlag"
+            <TextView
+                android:id="@+id/tvFlag"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:gravity="center"
                 android:padding="4dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_sharp_brightness_low_24"
+                android:textColor="@color/black"
+                android:textSize="72sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/tvCountryLabel"
                 app:layout_constraintHorizontal_weight="1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="🇵🇱" />
 
             <TextView
                 android:id="@+id/tvCountryLabel"
+                style="@style/TextViewCards"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/country"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_weight="1"
-                app:layout_constraintStart_toEndOf="@id/ivFlag"
+                app:layout_constraintStart_toEndOf="@id/tvFlag"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvCountryValue"
+                style="@style/TextViewValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@id/tvCountryLabel"
@@ -53,14 +57,17 @@
 
             <TextView
                 android:id="@+id/tvCapitalLabel"
+                style="@style/TextViewCards"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/capital"
                 app:layout_constraintStart_toStartOf="@id/tvCountryValue"
                 app:layout_constraintTop_toBottomOf="@id/tvCountryValue" />
 
             <TextView
                 android:id="@+id/tvCapitalValue"
+                style="@style/TextViewValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@id/tvCapitalLabel"
@@ -69,14 +76,17 @@
 
             <TextView
                 android:id="@+id/tvRegionLabel"
+                style="@style/TextViewCards"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/region"
                 app:layout_constraintStart_toStartOf="@id/tvCapitalValue"
                 app:layout_constraintTop_toBottomOf="@id/tvCapitalValue" />
 
             <TextView
                 android:id="@+id/tvRegionValue"
+                style="@style/TextViewValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"

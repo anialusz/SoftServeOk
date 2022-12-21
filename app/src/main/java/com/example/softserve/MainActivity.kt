@@ -1,7 +1,7 @@
 package com.example.softserve
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.softserve.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {

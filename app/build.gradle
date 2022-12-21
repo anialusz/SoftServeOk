@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.apollographql.apollo3'
 }
 
 android {
@@ -51,4 +52,12 @@ dependencies {
 
     implementation 'androidx.fragment:fragment-ktx:1.5.5'
     implementation 'androidx.activity:activity-ktx:1.5.1'
+
+    //Apollo
+    implementation 'com.apollographql.apollo3:apollo-runtime:3.7.3'
+}
+
+apollo {
+    packageName.set("com.example.softserve")
+    generateKotlinModels.set(true)
 }

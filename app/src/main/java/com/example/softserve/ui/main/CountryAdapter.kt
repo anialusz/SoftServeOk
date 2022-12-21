@@ -3,24 +3,25 @@ package com.example.softserve.ui.main
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.softserve.data.Country
+import com.example.softserve.CountryListQuery
 import com.example.softserve.databinding.ItemCountryListBinding
 
 class CountryAdapter(
-    private val dataSet: List<Country>,
-    private val onClick: (Country) -> Unit
+    private val dataSet: List<CountryListQuery.Country>,
+    private val onClick: (CountryListQuery.Country) -> Unit
 ) :
     RecyclerView.Adapter<CountryAdapter.ViewHolder>() {
 
     class ViewHolder(
         private val binding: ItemCountryListBinding,
-        val onClick: (Country) -> Unit
+        val onClick: (CountryListQuery.Country) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: Country) {
-            binding.tvCountryValue.text = item.country
+        fun bind(item: CountryListQuery.Country) {
+            binding.tvCountryValue.text = item.name
             binding.tvCapitalValue.text = item.capital
-            binding.tvRegionValue.text = item.region
+            binding.tvRegionValue.text = item.continent.name
+            binding.tvFlag.text = item.emoji
 
             binding.cvContainer.setOnClickListener {
                 onClick(item)
@@ -41,4 +42,3 @@ class CountryAdapter(
 
     override fun getItemCount() = dataSet.size
 }
-
